@@ -44,7 +44,6 @@ body{
   border:3px solid white;
   background:black;
 }
-
 .profile-pic img{
   width:100%;
   height:100%;
@@ -52,19 +51,10 @@ body{
 }
 
 h1{margin:10px 0 5px 0;}
-
 .tagline{font-size:14px; opacity:0.9;}
 
-.socials img{
-  width:36px;
-  margin:10px;
-}
-
 /* Search */
-.search-box{
-  margin:15px;
-}
-
+.search-box{margin:15px;}
 .search-box input{
   width:100%;
   padding:12px;
@@ -76,26 +66,26 @@ h1{margin:10px 0 5px 0;}
 
 /* Product */
 .products{padding:15px;}
-
 .card{
   background:#0b1020;
   border-radius:15px;
   padding:12px;
   margin-bottom:15px;
-  text-align:center;
 }
-
-.card img{
+.gallery{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+.gallery img{
   width:100%;
-  border-radius:12px;
+  border-radius:10px;
 }
-
 .price{
   color:#00bfff;
   font-size:22px;
   margin:8px 0;
 }
-
 .like{
   background:#121a35;
   display:inline-block;
@@ -109,22 +99,14 @@ h1{margin:10px 0 5px 0;}
 <body>
 
 <div class="header">
-
   <div class="call-btn">📞 9476309568</div>
 
-  <!-- LOGO -->
   <div class="profile-pic">
-    <img src="file_00000000ec5c72089ed9a8a56790f2e4.png" alt="M Fashion Logo">
+    <img src="file_00000000ec5c72089ed9a8a56790f2e4.png">
   </div>
 
   <h1>M Fashion</h1>
   <div class="tagline">Exclusive Blouse Collection • Order on WhatsApp</div>
-
-  <div class="socials">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
-  </div>
-
 </div>
 
 <div class="search-box">
@@ -134,13 +116,22 @@ h1{margin:10px 0 5px 0;}
 <div class="products">
 
   <div class="card">
-    <img src="https://via.placeholder.com/400x300.png?text=Blouse+Image">
-    <h2>Designer Blouse</h2>
-    <div class="price">₹499</div>
+
+    <!-- 4 BLOUSE IMAGES -->
+    <div class="gallery">
+      <img src="free-angoori-red-aarti-1.jpg">
+      <img src="free-angoori-red-aarti-2.jpg">
+      <img src="free-angoori-red-aarti-3.jpg">
+      <img src="free-angoori-red-aarti-4.jpg">
+    </div>
+
+    <h2>Round Neck Women Blouse</h2>
+    <div class="price">₹295</div>
     <div class="like">❤️ Like (1)</div>
+
   </div>
 
 </div>
 
 </body>
-</html>
+  </html>
