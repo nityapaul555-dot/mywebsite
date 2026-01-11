@@ -13,7 +13,7 @@ body{
   color:white;
 }
 
-/* Header */
+/* HEADER */
 .header{
   background: linear-gradient(135deg, #ff00cc, #7f00ff);
   padding:25px 15px;
@@ -22,7 +22,6 @@ body{
   text-align:center;
   position:relative;
 }
-
 .call-btn{
   position:absolute;
   top:15px;
@@ -33,8 +32,6 @@ body{
   border-radius:20px;
   font-size:14px;
 }
-
-/* Logo */
 .profile-pic{
   width:110px;
   height:110px;
@@ -49,11 +46,10 @@ body{
   height:100%;
   object-fit:cover;
 }
-
 h1{margin:10px 0 5px 0;}
 .tagline{font-size:14px; opacity:0.9;}
 
-/* Search */
+/* SEARCH */
 .search-box{margin:15px;}
 .search-box input{
   width:100%;
@@ -64,34 +60,46 @@ h1{margin:10px 0 5px 0;}
   font-size:15px;
 }
 
-/* Product */
+/* PRODUCT CARD */
 .products{padding:15px;}
 .card{
   background:#0b1020;
   border-radius:15px;
   padding:12px;
-  margin-bottom:15px;
 }
-.gallery{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:8px;
+
+/* SLIDER */
+.slider{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  gap:10px;
 }
-.gallery img{
-  width:100%;
-  border-radius:10px;
+.slider img{
+  min-width:100%;
+  border-radius:12px;
+  scroll-snap-align:center;
 }
+.slider::-webkit-scrollbar{display:none;}
+
 .price{
   color:#00bfff;
   font-size:22px;
   margin:8px 0;
 }
-.like{
-  background:#121a35;
-  display:inline-block;
-  padding:6px 14px;
-  border-radius:20px;
-  font-size:14px;
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+  display:block;
+  text-align:center;
+  margin-top:10px;
+  padding:12px;
+  border-radius:30px;
+  background:#25D366;
+  color:white;
+  font-size:18px;
+  text-decoration:none;
+  font-weight:bold;
 }
 </style>
 </head>
@@ -117,8 +125,8 @@ h1{margin:10px 0 5px 0;}
 
   <div class="card">
 
-    <!-- 4 BLOUSE IMAGES -->
-    <div class="gallery">
+    <!-- IMAGE SLIDER -->
+    <div class="slider">
       <img src="free-angoori-red-aarti-1.jpg">
       <img src="free-angoori-red-aarti-2.jpg">
       <img src="free-angoori-red-aarti-3.jpg">
@@ -127,11 +135,17 @@ h1{margin:10px 0 5px 0;}
 
     <h2>Round Neck Women Blouse</h2>
     <div class="price">₹295</div>
-    <div class="like">❤️ Like (1)</div>
+
+    <!-- WHATSAPP ORDER -->
+    <a class="whatsapp"
+       href="https://wa.me/919476309568?text=Hello,%20I%20want%20to%20order%20Round%20Neck%20Women%20Blouse%20(₹295)"
+       target="_blank">
+       🛒 Order on WhatsApp
+    </a>
 
   </div>
 
 </div>
 
 </body>
-  </html>
+</html>
